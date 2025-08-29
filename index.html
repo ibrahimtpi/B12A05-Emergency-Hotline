@@ -33,8 +33,165 @@
         <h2 class="text-2xl md:text-[40px] text-center font-bold my-3">Emergency Service Directory</h2>
         <p class="text-md md:text-xl text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
-    <main class="site-main">
-
+    <main class="site-main flex flex-col lg:flex-row m-[48px] gap-2">
+        <section class="w-full lg:w-3/4 content-section">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8" id="service-cards">
+                <!-- Service cards will be dynamically inserted here -->
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">National Emergency Number</h3>
+                    <p class="service-name mb-2">National Emergency</p>
+                    <h3 class="service-number text-3xl font-bold my-1">999</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">All</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#DFEFFF] rounded-2xl p-4">
+                            <img src="./assets/images/police.png" alt="police" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Police Helpline Number</h3>
+                    <p class="service-name mb-2">Police</p>
+                    <h3 class="service-number text-3xl font-bold my-1">999</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Police</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/fire-service.png" alt="fire-service" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Fire Service Number</h3>
+                    <p class="service-name mb-2">Fire Service</p>
+                    <h3 class="service-number text-3xl font-bold my-1">999</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Fire</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/ambulance.png" alt="ambulance" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Ambulance Service</h3>
+                    <p class="service-name mb-2">Ambulance</p>
+                    <h3 class="service-number text-3xl font-bold my-1">1994-999999</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Health</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Women & Child Helpline</h3>
+                    <p class="service-name mb-2">Women & Child Helpline</p>
+                    <h3 class="service-number text-3xl font-bold my-1">109</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Fire</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Anti-Corruption Helpline</h3>
+                    <p class="service-name mb-2">Anti-Corruption</p>
+                    <h3 class="service-number text-3xl font-bold my-1">106</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Govt.</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Electricity Helpline</h3>
+                    <p class="service-name mb-2">Electricity Outage</p>
+                    <h3 class="service-number text-3xl font-bold my-1">16216</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Electricity</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Brac Helpline</h3>
+                    <p class="service-name mb-2">Brac</p>
+                    <h3 class="service-number text-3xl font-bold my-1">16445</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">NGO</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+                <div class="service bg-white shadow-md rounded-lg p-4">
+                    <div class="icons flex items-center justify-between">
+                        <div class="service-image bg-[#FFE3E2] rounded-2xl p-4">
+                            <img src="./assets/images/emergency.png" alt="emergency" width="32">
+                        </div>
+                        <button class="btn heart-icon bg-transparent border-transparent"><img src="./assets/icons/heart-icon.svg" alt="heart-icon"></button>
+                    </div>
+                    <h2 class="text-xl font-bold mt-3">Bangladesh Railway Helpline </h3>
+                    <p class="service-name mb-2">Bangladesh Railway</p>
+                    <h3 class="service-number text-3xl font-bold my-1">163</h3>
+                    <strong class="category inline-block rounded-[50px] bg-[#f2f2f2] px-5 py-2 mb-5">Travel</strong>
+                    <div class="buttons flex justify-between gap-2">
+                        <button class="btn flex-1 copy-btn"><img src="./assets/icons/copy-icon.svg" alt="copy-icon"> Copy </button>
+                        <button class="btn call flex-1 bg-[#00A63E] text-white rounded-lg"><img src="./assets/icons/call-icon.svg" alt="call-icon">Call</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="w-full lg:w-1/4 min-w-[400px] p-4 bg-white lg:ml-6 shadow-md rounded-lg">
+            <div class="sidebar-heading flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold flex gap-2 items-center"><img src="./assets/icons/clock-icon.svg" alt="clock-icon"> Call History</h2>
+                <button id="clear-history" class="btn heart-icon bg-[#00A63E] text-white rounded-[50px]">Clear</button>
+            </div>
+            <ul id="call-history" class="call-history-list mb-6">
+                <!-- Call history items will be dynamically inserted here -->
+            </ul>
+        </aside>
     </main>
     <script src="./assets/scripts/script.js"></script>
 </body>
