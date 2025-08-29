@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F5FFF6]">
+    <header class="md:h-[100px] navbar flex-col md:flex-row gap-4 py-4 bg-white shadow-sm">
+        <div class="md:flex-1">
+            <a class="btn btn-ghost text-xl hover:bg-transparent border-transparent hover:shadow-transparent" href="./index.html"><img src="./assets/images/logo.png" width="50" alt="logo"> <h1 class="text-[#006747] text-left text-2xl font-bold leading-[26px] ml-1">Emergency<br>Service</h1></a>
+        </div>
+        <div class="md:flex-none">
+            <button class="btn btn-success rounded-[50px] bg-[rgba(65,255,107,0.1)] border-transparent px-6">
+                <span id="total-heart-count" class="text-md font-black mb-1">0</span> <img src="./assets/icons/heart-red-icon.svg" width="30" alt="heart-red-icon">
+            </button>
+            <button class="btn btn-success rounded-[50px] bg-[rgba(65,255,107,0.1)] border-transparent px-6">
+                <span id="coin-count" class="text-md font-black mb-1">100</span> <img src="./assets/icons/star-icon.svg" width="30" alt="star-icon">
+            </button>
+            <button class="btn btn-ghost bg-[#00A63E] rounded-[50px] text-md text-white px-6">
+                <span id="copy-count">2</span> Copy
+            </button>
+        </div>
+    </header>
+    
+    <main class="site-main">
+        
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
