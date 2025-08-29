@@ -57,3 +57,10 @@ function currentTime() {
     const strTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${ampm}`;
     return strTime;
 }
+
+
+
+// clear call history
+document.getElementById('clear-history').addEventListener('click', function () {
+    document.getElementById('call-history').innerHTML = '';
+});
