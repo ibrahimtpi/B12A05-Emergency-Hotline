@@ -11,6 +11,7 @@ for (const heartBtn of heartBtns) {
 }
 
 
+
 // Call Button Functionality
 const callBtns = document.getElementsByClassName('call');
 for (const callBtn of callBtns) {
@@ -64,3 +65,21 @@ function currentTime() {
 document.getElementById('clear-history').addEventListener('click', function () {
     document.getElementById('call-history').innerHTML = '';
 });
+
+
+
+// Copy Count Functionality
+const copyBtns = document.getElementsByClassName("copy-btn");
+for (const copyBtn of copyBtns) {
+    copyBtn.addEventListener('click', function (ele) {
+        ele.preventDefault();
+        let copyCount = parseInt(document.getElementById('copy-count').innerText);
+        copyCount += 1;
+        document.getElementById('copy-count').innerText = copyCount;
+
+        
+        const serviceNumber = ele.target.parentNode.parentNode.children[3].innerText;
+        navigator.clipboard.writeText(serviceNumber);
+        alert('Number has been copied to clipboard ' + serviceNumber);
+    });
+}
